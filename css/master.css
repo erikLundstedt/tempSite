@@ -75,6 +75,7 @@ body {
 	color:#ddd;
 }
 
+
 .grid
 {
     display: grid;
@@ -86,10 +87,6 @@ body {
 	grid-column: span 2 / auto;
 }
 
-.span-row-7
-{
-	grid-row: span 7 / auto;
-}
 
 
 
