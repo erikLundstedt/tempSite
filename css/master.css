@@ -57,6 +57,13 @@ body, html{
 	line-height:1.8em;
 	color:#666;
 }
+.wraper
+{
+max-width: 50%;
+	justify-content: center;
+}
+
+
 
 .pimg1, .pimg2, .pimg3
 {
