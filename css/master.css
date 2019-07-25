@@ -59,7 +59,7 @@ body, html{
 }
 .wraper
 {
-	max-width: 40%;
+	max-width: 50%;
 	justify-content: center;
 }
 
@@ -80,19 +80,19 @@ body, html{
 	background-attachment:scroll;
 }
 .pimg0{
-	background-image:url('../images/stepp0.jpg');
+	background-image:url('/images/stepp0.jpg');
 	/*min-height:100%;*/
 }
 .pimg1{
-	background-image:url('../images/stepp1.jpg');
+	background-image:url('/images/stepp1.jpg');
 	/*min-height:100%;*/
 }
 .pimg2{
-	background-image:url('../images/stepp2.jpg');
+	background-image:url('/images/stepp2.jpg');
 	/*min-height:400px;*/
 }
 .pimg3{
-	background-image:url('../images/stepp3.jpg');
+	background-image:url('/images/stepp3.jpg');
 /*	min-height:400px;*/
 }
 
