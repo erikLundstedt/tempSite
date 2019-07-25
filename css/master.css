@@ -16,17 +16,6 @@
 
 
 
-/*responsivenes*/
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
-Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px)
-{
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-}
-
 /*colors*/
 .red
 {
@@ -41,10 +30,6 @@ Show the link that contains should open and close the topnav (.icon) */
 	background-color:blue;
 }
 
-.loggocol
-{
-	background-color:#009999;
-}
 
 
 /*paralax*/
@@ -57,50 +42,22 @@ body, html{
 	line-height:1em;
 	color:#666;
 }
-.wraper
-{
-	max-width: 50%;
-	justify-content: center;
+
+body {
+	margin: 0;
+	font-size: 28px;
+}
+
+.header {
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
 }
 
 
-
-.pimg0,.pimg1, .pimg2, .pimg3
-{
-	position:relative;
-/*	opacity:0.70;*/
-	background-position:center;
-	/*background-size:cover;*/
-	background-repeat:no-repeat;
-
-	/*
-	fixed = parallax
-	scroll = normal
-	*/
-	background-attachment:scroll;
+.content {
+	padding: 16px;
 }
-
-
-/*
-.pimg0{
-	background-image:url('/images/stepp0.png');
-	min-height:100%;
-}
-.pimg1{
-	background-image:url('/images/stepp1.png');
-	min-height:100%;
-}
-.pimg2{
-	background-image:url('/images/stepp2.png');
-	min-height:400px;
-}
-.pimg3{
-	background-image:url('/images/stepp3.png');
-	min-height:400px;
-}
-*/
-
-
 
 .section{
 	text-align:center;
@@ -118,57 +75,31 @@ body, html{
 	color:#ddd;
 }
 
-.ptext{
-	position:absolute;
-	top:50%;
-	width:100%;
-	text-align:center;
-	color:#000;
-	font-size:27px;
-	letter-spacing:8px;
-	text-transform:uppercase;
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.span-col-2
+{
+	grid-column: span 2 / auto;
 }
 
-.ptext .border{
-	background-color:#111;
-	color:#fff;
-	padding:20px;
+.span-row-7
+{
+	grid-row: span 7 / auto;
 }
 
-.ptext .border.trans{
-	background-color:transparent;
-}
+
+
+
+
+
 
 @media(max-width:568px){
-	.pimg0,.pimg1, .pimg2, .pimg3
-	{
-		background-attachment:scroll;
-	}
-}
-body {
-	margin: 0;
-	font-size: 28px;
 }
 
-.header {
-	background-color: #f1f1f1;
-	padding: 30px;
-	text-align: center;
-}
-
-
-.content {
-	padding: 16px;
-}
-
-.sticky
+@media screen and (max-width: 600px)
 {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
-}
-
-.sticky + .content {
-	padding-top: 60px;
 }
